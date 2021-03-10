@@ -6,9 +6,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #333;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+p, h1, h3, label {
+  color: aliceblue;
+}
+
+form {
+  padding-bottom: 1rem;
+  border-bottom: rgba(88, 88, 88, 100) 1px solid !important;
+}
+
+input {
+  border-radius: 2px 0 0 2px;
+  border: none;
+  padding: .3rem;
 }

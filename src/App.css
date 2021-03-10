@@ -1,6 +1,6 @@
 body {
   margin: 40px auto;
-  max-width: 480px;
+  max-width: 640px;
   line-height: 1.6;
   font-size: 18px;
   color: #444;
@@ -11,33 +11,86 @@ h1, h3 {
   text-align: center;
 }
 
-
 .wrapper {
   display: grid;
-  grid-template-columns:  5fr 2fr 1fr;
-  border: solid 1px;
-  margin-bottom: 2px;
+  grid-template-columns:  5fr 3fr 2fr;
+  margin-bottom: .35rem;
+}
+
+.wrapper .todo {
+  border: solid 1px #6666;
+  border-radius: 2px 0 0 2px;
 }
 
 .complete {
   color: #c4c4c4 
 }
 
-.btn {
-  background-color: #444;
-  border: none; 
-  color: white;
+.status-btn,
+.remove-btn,
+.btn-success {
+  font-weight: bolder;
   padding: 12px 16px;
   font-size: 16px;
   cursor: pointer;
   margin-left: 1px;
+  border: none; 
+}
+
+.remove-btn {
+  background-color: rgb(177, 59, 59);
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -21px;
+  margin-top: -21px;
+  width: 42px !important;
+  height: 42px !important;
+}
+
+.status-btn {
+  border: none;
+  font-weight: bolder;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
 }
 
 .btn-complete {
   background-color: #c4c4c4;
-  color: white; 
 }
 
 .btn-success {
   background-color: green;
+  color: aliceblue;
+  border-radius: 0 2px 2px 0;
+}
+
+.title {
+  font-weight: bolder;
+}
+
+.relative {
+  position: relative;
+  border: none;
+}
+
+.label {
+  position: absolute;
+  top: -2rem;
+}
+
+.container {
+  background-color: #6666;
+  padding: 2.5rem;
+  padding-top: .5rem;
+  border-radius: 2px 2px 0 0;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.22); 
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.22);
 }
