@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import './animation.css';
+import './styles/App.css';
+import './styles/animation.css';
 import TodoContainer from './components/ToDoContainer';
 
 /**
