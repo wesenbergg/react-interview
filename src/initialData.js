@@ -3,7 +3,8 @@ const data = [
   {id: 2, name: 'Call Alice', complete: false},
   {id: 3, name: 'Ask Alice to call Bob', complete: false},
   {id: 4, name: 'Do the dishes', complete: false},
-  {id: 5, name: 'Change car tyres', complete: false}
+  {id: 5, name: 'Change car tyres', complete: false},
+  {id: 6, name: 'Tee todo-lista', complete: true},
 ];
 
 export default data;
