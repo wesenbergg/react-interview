@@ -1,29 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 /**
  * ToDo komponentti yksittäisen todo-palikan renderöintiin.
  */
 const ToDo = ({index, todo, onClickStatus, onRemoveClick}) => {
-  const [click, setClick] = useState(false)
-
   const color = todo.complete ? 'lightgreen': 'pink';
   const text = todo.complete ? 'Complete': 'Incomplete';
 
   //Hauska algoritmi värien generointiin :D
   const todoColor = `rgba(${(index*10%175)+80},${(index*25%175)+80},${(index*50%175)+80},200)`
-  
-  //Näytetään animaatio ennen varsinaista poistoa
-  const remove = () => {
-    setClick(true)
-    setTimeout(() => {
-      onRemoveClick()
-    }, 400)
-  }
 
   return (
-    <div className=
-      {`wrapper slide-in-left ${click ? 'exit': ''}`}
-      >
+    <div className="wrapper slide-in-left">
       <div
       className="todo"
       style={{backgroundColor: todoColor}}
@@ -38,7 +26,7 @@ const ToDo = ({index, todo, onClickStatus, onRemoveClick}) => {
       </button>
       <div className="relative">
         <button className="remove-btn"
-          onClick={() => remove()}>
+          onClick={() => onRemoveClick()}>
           X
         </button>
       </div>
